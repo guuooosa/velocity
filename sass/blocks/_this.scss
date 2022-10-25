@@ -1,0 +1,54 @@
+.this {
+    padding-top: clamp(1.875rem, -3.093rem + 24.84vw, 11.5rem);
+    background: url("../img/image/bg-this.jpg") center no-repeat;
+    min-height: 594px;
+
+    &__title {
+        font-size: 59px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__buttons {
+        padding-top: clamp(1.875rem, -0.577rem + 12.26vw, 6.625rem);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 4px;
+        a{ font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        }
+    }
+
+    &__sign {
+        background: #69B9FF;
+        padding: 10px 30px;
+        transition: all 0.2s;
+         @media (any-hover: hover){
+                    &:hover {
+                        background: transparent;
+                        border: 1px solid #FFFFFF;
+                    }
+                }
+    }
+
+    &__more {
+        padding: 10px 30px;
+        background: transparent;
+        border: 1px solid #FFFFFF;
+        transition: all 0.2s;
+         @media (any-hover: hover){
+                    &:hover {
+                        background: #69B9FF;
+                        border: none;
+                    }
+                }
+    }
+}

@@ -1,0 +1,41 @@
+.header {
+    padding-top: clamp(0.625rem, 0.399rem + 1.13vw, 1.063rem);
+    padding-bottom: clamp(0.625rem, 0.367rem + 1.29vw, 1.125rem);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: $color-blue;
+        @media (max-width: 350px) {
+            font-size: 20px;
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        gap: clamp(0.625rem, -0.343rem + 4.84vw, 2.5rem);
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+        color: #676770;
+        transition: color 0.2s;
+         @media (any-hover: hover){
+                    &:hover {
+                        color: #0082F3;
+                    }
+                }
+    }
+}

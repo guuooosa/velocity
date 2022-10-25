@@ -1,0 +1,111 @@
+.tab {
+    padding-top: 77px;
+    padding-bottom: 80px;
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 17px;
+        h2 {
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #676770;
+        }
+        h3 {
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8e8e9c;
+        }
+    }
+
+    &__container {
+    }
+
+    &__tabs {
+        margin-top: 71px;
+    }
+
+    &__section {
+        margin-top: 16px;
+    }
+
+    &__title {
+        font-size: 31px;
+        line-height: 36px;
+        text-align: center;
+        color: #676770;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+        color: #6a859c;
+        text-align: center;
+        margin-top: 14px;
+    }
+}
+.tab-btn {
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        @media (max-width: 900px) {
+        flex-wrap: wrap;
+        }
+    }
+
+    &__tab {
+        background: #92a0ad;
+        border-radius: 4px;
+        padding: 0 30px;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: background 0.2s;
+        @media (any-hover: hover) {
+            &:hover {
+                background: #2e80b6;
+            }
+        }
+        &-active {
+            background: #2e80b6;
+        }
+    }
+
+    &__content {
+        margin-top: 52px;
+        position: relative;
+        img{
+        animation: fade 1s;
+        }
+        @media (max-width: 950px) {
+        img {
+            width: 100%;
+        }
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: 0.3;
+        }
+        to {
+            opacity: 1;
+        }
+    }  
+    
+}
+
+.hide {
+    display: none;
+}

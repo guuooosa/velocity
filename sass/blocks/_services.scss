@@ -1,0 +1,94 @@
+.services {
+    background: #192024;
+    padding-top: clamp(1.875rem, 0.294rem + 7.9vw, 4.938rem);
+    padding-bottom: clamp(1.875rem, 0.262rem + 8.06vw, 5rem);
+
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(0.625rem, 0.399rem + 1.13vw, 1.063rem);
+        h2 {
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        h3 {
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #e8e8e8;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+    }
+    
+    }
+
+    &__card {
+        padding-top: clamp(1.25rem, -0.04rem + 6.45vw, 3.75rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 19px;
+    }
+}
+.services-card {
+    &__img {
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+        @media (max-width: 401px) {
+        width: 250px;
+        }
+    
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__text {
+        display: inline-block;
+        width: 395px;
+        font-size: 14px;
+        line-height: 25px;
+        color: #ffffff;
+    }
+
+    &__btn {
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 10px 31px;
+        background: transparent;
+        transition: background 0.5s;
+         @media (any-hover: hover){
+                    &:hover {
+                        background: #03182a;
+                    }
+                }
+    }
+}
